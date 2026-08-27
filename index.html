@@ -1,92 +1,194 @@
-Create a complete, modern, attractive, professional, and fully responsive personal portfolio website for me.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehek Toppo | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f8f5ff;color:#29233d;line-height:1.6}
+nav{position:sticky;top:0;background:#fff;z-index:10;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #ddd}
+.logo{font-size:24px;font-weight:bold;color:#7446c8}
+nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:bold}
+section{padding:70px 8%;max-width:1200px;margin:auto}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:52px;color:#7042c4}
+.hero h2{font-size:25px;margin:10px 0}
+.hero p{max-width:650px;margin:20px auto;color:#666}
+.btn{display:inline-block;background:#7042c4;color:white;padding:12px 25px;border-radius:25px;text-decoration:none;margin:8px}
+.title{text-align:center;font-size:34px;color:#7042c4;margin-bottom:35px}
+.cardbox{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:0 5px 20px #ddd}
+.card h3{color:#7042c4;margin-bottom:10px}
+.skills span{display:inline-block;background:#eee5ff;padding:10px 16px;border-radius:20px;margin:6px}
+.project{border-top:4px solid #7042c4}
+.contact{text-align:center}
+footer{text-align:center;background:#29233d;color:white;padding:25px}
+@media(max-width:700px){
+nav{flex-direction:column;gap:10px}
+nav a{margin:5px;font-size:14px}
+.hero h1{font-size:38px}
+section{padding:55px 6%}
+}
+</style>
+</head>
 
-My details:
+<body>
 
-Name: Mehek Toppo
-Current Status: B.A. / 3rd Semester Student
-Roll No.: 25EN0091
-Role: Aspiring Web Developer & 3rd Semester Student
-Tagline: "Learning to build beautiful things for the web"
+<nav>
+<div class="logo">Mehek Toppo</div>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-About Me:
-I am Mehek Toppo, a B.A. 3rd Semester student and an aspiring web developer. I am learning HTML, CSS, and JavaScript and interested in creating beautiful, user-friendly websites. I enjoy learning new technologies and improving my web design and development skills.
+<section class="hero" id="home">
+<div>
+<h1>Hi, I'm Mehek Toppo</h1>
+<h2>Aspiring Web Developer & 3rd Semester Student</h2>
+<p>Learning to build beautiful things for the web through creativity, technology and AI-assisted development.</p>
+<a class="btn" href="#projects">View My Projects</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+</section>
 
-Website requirements:
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="card">
+<p>
+I am Mehek Toppo, a B.A. English student currently studying in my 3rd semester.
+I am interested in web designing, front-end development and creating useful
+digital experiences. I enjoy learning new technologies and experimenting with
+HTML, CSS, JavaScript and generative AI tools.
+</p>
+<br>
+<p>
+My goal is to improve my web development skills and create modern, responsive
+and user-friendly websites. This portfolio represents my learning journey and
+the projects I have developed during my AI-assisted web development experience.
+</p>
+</div>
+</section>
 
-- Use ONLY HTML, CSS, and vanilla JavaScript.
-- Do NOT use React, Bootstrap, Tailwind, or any framework.
-- Do NOT use APIs.
-- Do NOT require any external files.
-- Everything must be contained in ONE file named "index.html".
-- Make the website fully responsive for mobile, tablet, and desktop.
-- Use a clean, modern, elegant design suitable for a college project submission.
-- Add smooth scrolling and subtle animations.
-- Include a responsive navigation bar.
-- Include these sections:
-  1. Home
-  2. About Me
-  3. Skills
-  4. Projects
-  5. Education
-  6. Contact
+<section id="skills">
+<h2 class="title">My Skills</h2>
+<div class="card skills">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Responsive Design</span>
+<span>Web Designing</span>
+<span>UI Design</span>
+<span>GitHub</span>
+<span>Generative AI</span>
+<span>Problem Solving</span>
+<span>Creative Thinking</span>
+</div>
+</section>
 
-Skills:
+<section id="education">
+<h2 class="title">Education</h2>
+<div class="cardbox">
+<div class="card">
+<h3>B.A. English</h3>
+<p>Currently pursuing my Bachelor's degree.</p>
+<p><b>Semester:</b> 3rd Semester</p>
+</div>
+<div class="card">
+<h3>Web Development Learning</h3>
+<p>Learning HTML, CSS, JavaScript and AI-assisted website development.</p>
+</div>
+</div>
+</section>
 
-- HTML
-- CSS
-- JavaScript
-- Responsive Web Design
-- GitHub
-- AI-Assisted Web Development
+<section id="projects">
+<h2 class="title">My Projects</h2>
+<div class="cardbox">
 
-Projects:
+<div class="card project">
+<h3>Job Finder App</h3>
+<p>A modern website designed to help users explore and search for job opportunities.</p>
+<p><b>Technologies:</b> HTML, CSS and JavaScript</p>
+<br>
+<a class="btn" href="#">View Project</a>
+</div>
 
-1. Job Finder App
-   Description: A responsive job-search interface designed to help users explore and find suitable job opportunities.
+<div class="card project">
+<h3>Study Planner</h3>
+<p>A simple and useful study planning website that helps students organize their study schedule and tasks.</p>
+<p><b>Technologies:</b> HTML, CSS and JavaScript</p>
+<br>
+<a class="btn" href="#">View Project</a>
+</div>
 
-2. Study Planner
-   Description: A simple and interactive study planning website that helps students organize their study schedule and tasks.
+<div class="card project">
+<h3>Beauty Tips</h3>
+<p>A creative beauty information website containing tips and helpful content presented in a clean design.</p>
+<p><b>Technologies:</b> HTML, CSS and JavaScript</p>
+<br>
+<a class="btn" href="#">View Project</a>
+</div>
 
-3. Beauty Tips
-   Description: A modern beauty tips website providing simple beauty, skincare, and self-care suggestions.
+</div>
+</section>
 
-Add attractive project cards with buttons such as "View Project".
+<section>
+<h2 class="title">AI-Assisted Development</h2>
+<div class="cardbox">
+<div class="card">
+<h3>Generative AI</h3>
+<p>I used generative AI tools to understand coding concepts, generate ideas, improve website structure and assist in developing web projects.</p>
+</div>
+<div class="card">
+<h3>My Learning Approach</h3>
+<p>AI helped me learn by explaining code, suggesting improvements and helping me understand how different web technologies work together.</p>
+</div>
+</div>
+</section>
 
-Home section should include:
-"Hi, I'm Mehek Toppo"
-"Aspiring Web Developer & 3rd Semester Student"
-"Learning to build beautiful things for the web"
+<section>
+<h2 class="title">What I Learned</h2>
+<div class="cardbox">
+<div class="card">
+<h3>Web Design</h3>
+<p>Learned how to create structured, attractive and responsive web pages using HTML and CSS.</p>
+</div>
+<div class="card">
+<h3>JavaScript</h3>
+<p>Learned the basics of adding interaction and functionality to websites.</p>
+</div>
+<div class="card">
+<h3>GitHub</h3>
+<p>Learned how to create repositories, upload projects and publish websites using GitHub Pages.</p>
+</div>
+</div>
+</section>
 
-Add a prominent "View My Projects" button and "Contact Me" button.
+<section id="contact" class="contact">
+<h2 class="title">Contact Me</h2>
+<div class="card">
+<h3>Let's Connect</h3>
+<p>If you would like to know more about my projects or learning journey, feel free to connect with me.</p>
+<br>
+<p><b>Name:</b> Mehek Toppo</p>
+<p><b>Role:</b> Aspiring Web Developer</p>
+<p><b>Education:</b> B.A. English, 3rd Semester</p>
+<br>
+<a class="btn" href="mailto:your-email@example.com">Email Me</a>
+</div>
+</section>
 
-About section should have a professional student introduction.
+<footer>
+<p>© 2026 Mehek Toppo | Personal Portfolio</p>
+<p>Designed and developed with HTML, CSS, JavaScript and AI-assisted learning.</p>
+</footer>
 
-Education section:
-B.A. English
-3rd Semester
-North Bengal University
-
-Contact section:
-Name: Mehek Toppo
-Email: Add a simple placeholder email such as mehektoppo@example.com
-GitHub: Add a placeholder GitHub link that I can replace later.
-
-Design:
-
-- Use a beautiful modern color combination.
-- Add a professional hero section.
-- Use cards, rounded corners, shadows, and hover effects.
-- Make typography clean and readable.
-- Include a footer with my name and copyright.
-- Do not use emojis.
-- Do not add fake work experience.
-- Do not add information that I did not provide.
-- Make sure all navigation links work.
-- Make sure the JavaScript features work correctly.
-- Make sure the final code can be copied directly into GitHub as "index.html".
-
-IMPORTANT:
-Return ONLY the complete code for "index.html".
-Do not explain the code.
-Do not use Markdown code fences.
+</body>
+</html>
   
